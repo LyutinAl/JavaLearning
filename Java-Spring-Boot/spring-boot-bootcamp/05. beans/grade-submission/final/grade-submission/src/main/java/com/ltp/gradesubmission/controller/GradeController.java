@@ -1,9 +1,9 @@
 package com.ltp.gradesubmission.controller;
 
-import javax.validation.Valid;
-
 import com.ltp.gradesubmission.pojo.Grade;
 import com.ltp.gradesubmission.service.GradeService;
+
+import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +21,7 @@ public class GradeController {
 
     @GetMapping("/")
     public String gradeForm(Model model, @RequestParam(required = false) String id) {
+        
         model.addAttribute("grade", gradeService.getGradeById(id));
         return "form";
     }

@@ -2,7 +2,7 @@ package com.ltp.gradesubmission.pojo;
 
 import java.util.UUID;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 
 import com.ltp.gradesubmission.validation.Score;
 
@@ -15,6 +15,14 @@ public class Grade {
     @Score(message = "Score must be a letter grade")
     private String score;
     private String id;
+
+
+    public Grade(String name, String subject, String score) {
+        this.name = name;
+        this.subject = subject;
+        this.score = score;
+        this.id = UUID.randomUUID().toString();
+    }
 
 
     public Grade() {

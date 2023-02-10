@@ -2,7 +2,7 @@ package com.ltp.gradesubmission;
 
 import java.util.UUID;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 
 public class Grade {
 

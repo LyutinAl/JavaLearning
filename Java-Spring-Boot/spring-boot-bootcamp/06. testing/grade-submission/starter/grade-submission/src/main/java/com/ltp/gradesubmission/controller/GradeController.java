@@ -1,6 +1,6 @@
 package com.ltp.gradesubmission.controller;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import com.ltp.gradesubmission.pojo.Grade;
 import com.ltp.gradesubmission.service.GradeService;
