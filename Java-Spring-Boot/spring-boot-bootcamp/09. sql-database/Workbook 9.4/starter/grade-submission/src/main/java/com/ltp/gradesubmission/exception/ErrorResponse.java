@@ -16,6 +16,7 @@ public class ErrorResponse {
         this.message = message;
     }
 
+
     public LocalDateTime getTimestamp() {
         return this.timestamp;
     }
@@ -31,5 +32,6 @@ public class ErrorResponse {
     public void setMessage(List<String> message) {
         this.message = message;
     }
+
 
 }
